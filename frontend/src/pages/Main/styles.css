@@ -6,6 +6,17 @@ body {
     background-size: cover;
 }
 
+#server-answer{
+    display: none;
+    color: #ffffff;
+    background: var(--secundary-color-transparent);
+
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 1em;
+}
+
 /* MAIN */
     main {
         width: 100%;
