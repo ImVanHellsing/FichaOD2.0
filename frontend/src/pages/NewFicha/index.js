@@ -1,36 +1,47 @@
-// Main Imports
-import React, { useState} from 'react'
+// Main
+import React, { useState } from 'react';
 // import { useHistory } from 'react-router-dom'
 // import { FaSearch, FaPlus, FaEdit, FaPrint } from 'react-icons/fa'
 
 // Styles
-import '../../global.css'
-import './styles.css'
+import '../../assets/css/externalStyles.scss';
+import {} from './styles';
 
-// Components / Assets Imports
-import Navbar from '../../components/navbar'
-import Footer from '../../components/footer'
-import MultiStepForm from '../../components/MultStepForm/NewFichaForm'
+// Components / Assets
+import Navbar from '../../components/NavbarForm/navbar';
+import Footer from '../../components/Footer/footer';
+import Form from '../../components/Form/NewFichaForm';
+import MainBg from '../../assets/img/bg-main.jpg';
 
 export default function NewFicha() {
+	// const [id_file, setId_file] = useState('')
 
-    // const [id_file, setId_file] = useState('')
+	// const history = useHistory()
 
-    // const history = useHistory()
+	// async function handleSearch(e) {
+	//     e.preventDefault()
 
-    // async function handleSearch(e) {
-    //     e.preventDefault()
+	//     try{
+	//     }catch(err){
+	//     }
+	//
 
-    //     try{
-    //     }catch(err){
-    //     }
-    // 
+	return (
+		<React.Fragment>
+			<div
+				style={{
+					backgroundSize: 'cover',
+					backgroundImage: `url(${MainBg})`,
+					backgroundRepeat: 'no-repeat',
+					backgroundAttachment: 'fixed',
+					height: '100vh',
+				}}
+			>
+				<Navbar />
 
-    return (
-        <React.Fragment>
-            <Navbar />
-            <MultiStepForm />
-            <Footer />
-        </React.Fragment>
-    )
-}   
+				<Form />
+				{/* <Footer /> */}
+			</div>
+		</React.Fragment>
+	);
+}
