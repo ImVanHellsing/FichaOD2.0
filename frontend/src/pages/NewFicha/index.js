@@ -34,7 +34,6 @@ export default function NewFicha() {
 					backgroundImage: `url(${MainBg})`,
 					backgroundRepeat: 'no-repeat',
 					backgroundAttachment: 'fixed',
-					height: '100vh',
 				}}
 			>
 				<Navbar />

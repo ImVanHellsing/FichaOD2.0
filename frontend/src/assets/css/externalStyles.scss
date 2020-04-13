@@ -43,6 +43,10 @@ body {
 	}
 	text-align: center;
 
+	-webkit-box-shadow: 10px 10px 65px 8px #fff;
+	-moz-box-shadow: 10px 10px 65px 8px #fff;
+	box-shadow: 10px 10px 65px 8px #fff;
+
 	&:first-child {
 		padding: 40px 30px;
 	}
@@ -67,6 +71,26 @@ body {
 		position: relative;
 		display: inline-block;
 		margin: 30px 10px;
+
+		&.default {
+			margin: 1em;
+		}
+	}
+
+	.atribute {
+		display: block;
+	}
+
+	.label {
+		display: inline-block;
+		width: 100%;
+		padding: 10px 15px 10px 15px;
+		font-family: 'Open Sans', sans;
+		font-weight: 400;
+		color: #377d6a;
+		background: #efefef;
+		border: 0;
+		border-radius: 3px;
 	}
 }
 .basic-slide {
@@ -208,6 +232,10 @@ body {
 	outline: 0;
 	text-indent: 10em; // Arbitrary.
 	transition: all 0.3s ease-in-out;
+
+	.small {
+		width: 150px;
+	}
 
 	&#char_name,
 	&#player_name {
@@ -544,7 +572,7 @@ span:nth-child(3) .card-slide:active {
 		left: 0;
 		padding: 10px 15px;
 		text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
-		background: #7ab893;
+		background: #377d6a;
 		border-top-left-radius: 3px;
 		border-bottom-left-radius: 3px;
 		transform-origin: 2px 2px;
@@ -625,7 +653,7 @@ span:nth-child(3) .card-slide:active {
 		left: 0;
 		bottom: 8px;
 		padding: 5px 15px;
-		color: #032429;
+		color: #377d6a;
 		font-size: 11px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -669,6 +697,11 @@ span:nth-child(3) .card-slide:active {
 		}
 	}
 }
+
+.small {
+	width: 150px;
+}
+
 //Container
 .container {
 	max-width: 85%;

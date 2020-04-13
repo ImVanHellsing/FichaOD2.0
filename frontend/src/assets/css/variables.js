@@ -13,9 +13,10 @@ const GlobalStylesVariables = createGlobalStyle`
 
         /* PRIMARY */
         --primary-color: rgb(255, 0, 0);
+
         --primary-color-transparent: rgba(255, 0, 0, 0.25);
 
-        /* PRIMARY */
+        /* SECUNDARY */
         --secundary-color: #D8B784;
         
         --secundary-color-shadow: rgb(180, 108, 0);
@@ -24,6 +25,11 @@ const GlobalStylesVariables = createGlobalStyle`
         --secundary-color-transparent: rgba(216, 182, 132, 0.8);
         --secundary-color-transparent2: rgba(216, 182, 132, 0.5);
         --secundary-color-transparent3: rgba(216, 182, 132, 0.3);
+
+        /* TERCIARY */
+        --terciary-color: #377d6a;
+        
+        --terciary-color-light: #7ab893;
     }
 `;
 

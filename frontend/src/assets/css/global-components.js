@@ -45,6 +45,16 @@ export const Button = styled.button`
 		}
 	}
 
+	&.btn-special {
+		color: #fff;
+		background: var(--terciary-color);
+
+		&:hover {
+			color: var(--terciary-color);
+			background: #fff;
+		}
+	}
+
 	& i {
 		margin-right: 1em;
 	}
@@ -112,4 +122,11 @@ export const InputHome = styled.input`
 `;
 export const Input = styled.input``;
 
-export const TextArea = styled.textarea``;
+//Tittle
+export const TittleForm = styled.h1`
+	color: #377d6a;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+	letter-spacing: 10px;
+	font-weight: bolder;
+`;

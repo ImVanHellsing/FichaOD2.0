@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
 
 //Styles
-import { Button } from '../../assets/css/global-components';
+import { Button, TittleForm } from '../../assets/css/global-components';
 import '../../assets/css/externalStyles.scss';
 
 export class CaracterData extends Component {
@@ -108,8 +107,8 @@ export class CaracterData extends Component {
 					<label for='char_description'>Características</label>
 				</span>
 
-				<div className='buttonsDiv' style={{ textAlign: 'start' }}>
-					<Button className='btn btn-secundary' onClick={this.continue}>
+				<div className='buttonsDiv' style={{ textAlign: 'center' }}>
+					<Button className='btn btn-special' onClick={this.continue}>
 						<i>
 							<FaArrowRight />
 						</i>
@@ -120,13 +119,5 @@ export class CaracterData extends Component {
 		);
 	}
 }
-
-const TittleForm = styled.h1`
-	color: #377d6a;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2.5em;
-	letter-spacing: 10px;
-	font-weight: bolder;
-`;
 
 export default CaracterData;
