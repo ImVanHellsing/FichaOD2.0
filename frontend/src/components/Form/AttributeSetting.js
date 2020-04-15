@@ -6,12 +6,12 @@ import { Button, TittleForm } from '../../assets/css/global-components';
 import '../../assets/css/externalStyles.scss';
 
 export class AttributeSetting extends Component {
-	continue = e => {
+	continue = (e) => {
 		e.preventDefault();
 		this.props.nextStep();
 	};
 
-	back = e => {
+	back = (e) => {
 		e.preventDefault();
 		this.props.prevStep();
 	};
@@ -61,26 +61,26 @@ export class AttributeSetting extends Component {
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='atkBonus'
 								name='atkBonus'
+								defaultValue={values.atkBonus}
+								value={values.atkBonus}
 								style={{ textIndent: '9em' }}
-							>
-								+2
-							</label>
+							></input>
 							<label for='atkBonus'>Bônus de Ataque</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='cargo'
 								name='cargo'
+								defaultValue={values.cargo}
+								value={values.cargo}
 								style={{ textIndent: '6em' }}
-							>
-								60/80/100
-							</label>
+							></input>
 							<label for='cargo'>Carga</label>
 						</span>
 					</div>
@@ -102,27 +102,27 @@ export class AttributeSetting extends Component {
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='dexBonus'
 								name='dexBonus'
+								defaultValue={values.dexBonus}
+								value={values.dexBonus}
 								style={{ textIndent: '7.5em' }}
-							>
-								+2
-							</label>
+							></input>
 							<label for='dexBonus'>Ajuste</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
-								id='thief-atr'
-								name='thief-atr'
+								id='thief_atr'
+								name='thief_atr'
+								defaultValue={values.thief_atr}
+								value={values.thief_atr}
 								style={{ textIndent: '5em' }}
-							>
-								10%/20%/50%
-							</label>
-							<label for='thief-atr'>Ladino</label>
+							></input>
+							<label for='thief_atr'>Ladino</label>
 						</span>
 					</div>
 
@@ -143,26 +143,26 @@ export class AttributeSetting extends Component {
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='conBonus'
 								name='conBonus'
+								defaultValue={values.conBonus}
+								value={values.conBonus}
 								style={{ textIndent: '9em' }}
-							>
-								+2
-							</label>
+							></input>
 							<label for='conBonus'>Bônus de Vida</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='ressurect'
 								name='ressurect'
+								defaultValue={values.ressurect}
+								value={values.ressurect}
 								style={{ textIndent: '8.5em' }}
-							>
-								50%
-							</label>
+							></input>
 							<label for='ressurect'>% Ressureição</label>
 						</span>
 					</div>
@@ -184,38 +184,38 @@ export class AttributeSetting extends Component {
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up small'
 								id='languages'
 								name='languages'
-								style={{ textIndent: '5.5em' }}
-							>
-								+2
-							</label>
+								defaultValue={values.languages}
+								value={values.languages}
+								style={{ textIndent: '6em' }}
+							></input>
 							<label for='languages'>Idiomas</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up small'
 								id='learnMagic'
 								name='learnMagic'
-								style={{ textIndent: '6em' }}
-							>
-								50%
-							</label>
+								defaultValue={values.learnMagic}
+								value={values.learnMagic}
+								style={{ textIndent: '6.5em' }}
+							></input>
 							<label for='learnMagic'>% Aprender</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up small'
 								id='magicBonus'
 								name='magicBonus'
+								defaultValue={values.magicBonus}
+								value={values.magicBonus}
 								style={{ textIndent: '5.5em' }}
-							>
-								50%
-							</label>
+							></input>
 							<label for='magicBonus'>+ Magias</label>
 						</span>
 					</div>
@@ -237,26 +237,26 @@ export class AttributeSetting extends Component {
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='protection'
 								name='protection'
-								style={{ textIndent: '7.5em' }}
-							>
-								+2
-							</label>
+								defaultValue={values.protection}
+								value={values.protection}
+								style={{ textIndent: '8em' }}
+							></input>
 							<label for='protection'>Proteção</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up'
 								id='miracles'
 								name='miracles'
-								style={{ textIndent: '7.5em' }}
-							>
-								+2
-							</label>
+								defaultValue={values.miracles}
+								value={values.miracles}
+								style={{ textIndent: '8em' }}
+							></input>
 							<label for='miracles'>+ Milagres</label>
 						</span>
 					</div>
@@ -278,38 +278,38 @@ export class AttributeSetting extends Component {
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up small'
 								id='followers'
 								name='followers'
-								style={{ textIndent: '6em' }}
-							>
-								+2
-							</label>
+								defaultValue={values.followers}
+								value={values.followers}
+								style={{ textIndent: '6.5em' }}
+							></input>
 							<label for='followers'>Seguidores</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up small'
 								id='reaction'
 								name='reaction'
+								defaultValue={values.reaction}
+								value={values.reaction}
 								style={{ textIndent: '5em' }}
-							>
-								50%
-							</label>
+							></input>
 							<label for='reaction'>Reação</label>
 						</span>
 
 						<span>
-							<label
+							<input
 								class='slide-up small'
 								id='undeads'
 								name='undeads'
-								style={{ textIndent: '6em' }}
-							>
-								+2
-							</label>
+								defaultValue={values.undeads}
+								value={values.undeads}
+								style={{ textIndent: '5.5em' }}
+							></input>
 							<label for='undeads'>Undeads</label>
 						</span>
 					</div>

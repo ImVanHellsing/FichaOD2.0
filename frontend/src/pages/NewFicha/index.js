@@ -28,19 +28,9 @@ export default function NewFicha() {
 
 	return (
 		<React.Fragment>
-			<div
-				style={{
-					backgroundSize: 'cover',
-					backgroundImage: `url(${MainBg})`,
-					backgroundRepeat: 'no-repeat',
-					backgroundAttachment: 'fixed',
-				}}
-			>
-				<Navbar />
-
-				<Form />
-				{/* <Footer /> */}
-			</div>
+			<Navbar />
+			<Form />
+			{/* <Footer /> */}
 		</React.Fragment>
 	);
 }
